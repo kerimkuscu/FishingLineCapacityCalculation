@@ -1,4 +1,4 @@
-const mainStyles = {
+const layoutStyles = {
     view: {
         flex: 1,
         backgroundColor: '#fff',
@@ -19,6 +19,10 @@ const mainStyles = {
     pb30: {
         paddingBottom: 30
     },
+
+    secondaryButton: {
+        color: '#6c757d'
+    }
 };
 
-export default mainStyles;
+export default layoutStyles;
