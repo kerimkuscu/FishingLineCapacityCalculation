@@ -3,7 +3,7 @@ import { View, Text, Button } from 'react-native';
 import {Input} from "@rneui/themed";
 import layoutStyles from "../styles/layoutStyles";
 
-export default function Calculation3({ onCalculate }) {
+export default function Calculation3() {
     const [f, setF] = useState('');
     const [g, setG] = useState('');
     const [h, setH] = useState('');

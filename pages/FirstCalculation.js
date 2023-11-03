@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {View} from 'react-native';
 import {Button, Input, Text} from "@rneui/themed";
 import layoutStyles from "../styles/layoutStyles";
-import SecondCalculation from './SecondCalculation';
 
 export default function Calculation1({onCalculate}) {
     const [a, setA] = useState('');
