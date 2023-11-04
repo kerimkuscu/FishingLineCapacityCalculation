@@ -3,14 +3,13 @@ import { View, Text, Button } from 'react-native';
 import {Input} from "@rneui/themed";
 import layoutStyles from "../styles/layoutStyles";
 
-export default function Calculation3() {
-    const [f, setF] = useState('');
+export default function Calculation3({f}) {
     const [g, setG] = useState('');
     const [h, setH] = useState('');
     const [ı, setI] = useState('');
 
     const calculateResult = () => {
-        const result = (parseFloat(f) * parseFloat(g)) / parseFloat(h);
+        const result = (parseFloat(f) * parseFloat(g.replace(',', '.'))) / parseFloat(h.replace(',', '.'));
         setI(result);
     };
 

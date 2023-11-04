@@ -20,19 +20,19 @@ export default function Calculation1({onCalculate}) {
             <Text h4 style={[layoutStyles.text, layoutStyles.pt30, layoutStyles.pb30]}>Calculating the fishing line capacity to be used in the machine</Text>
             <Input
                 placeholder="Recommended mono line thickness (mm)"
-                value={a}
+                value={a.toString()}
                 keyboardType='numeric'
                 onChangeText={(text) => setA(text)}
             />
             <Input
                 placeholder="Recommended mono line length (m)"
-                value={b}
+                value={b.toString()}
                 keyboardType='numeric'
                 onChangeText={(text) => setB(text)}
             />
             <Input
                 placeholder="Line thickness to be used (mm)"
-                value={c}
+                value={c.toString()}
                 keyboardType='numeric'
                 onChangeText={(text) => setC(text)}
             />
